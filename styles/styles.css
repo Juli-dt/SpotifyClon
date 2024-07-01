@@ -17,7 +17,6 @@ aside {
     display: flex;
     flex-direction: column;
     gap: 6px;
-
 }
 
 button {
@@ -55,78 +54,121 @@ svg {
 }
 
 
-li {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.list {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-auto-rows: auto 1fr auto;
-    align-items: center;
-    grid-template-rows: 53px !important;
-    gap: 8px;
-    
-}
-
-.list img {
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-}
-.aside_down {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    gap: 16px;
-}
-.aside_down-header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 8px;
-    padding: 8px 16px;
-}
 
 .right_buttons {
     display: flex;
     flex-direction: row;
 }
 
-.top_aside {
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    padding: 8px 16px;
-}
-
-.mid {
-    display: flex;
-    justify-content: space-between;
-}
-
-.mid_button {
-    align-items: flex-start;
-}
-.top_aside--button{
-    background-color: #2a2a2a;
-    border-radius: 50%;
-}
-.artistas {
-    border-radius: 11px;
-    color: #000000;
-    background-color: #f5ecec;
-    display: flex;
-    align-items: center;
-    width: 65px;
-    HEIGHT: 26px;
-    justify-content: center;
-}
 
 path {
     width: 100%;
     box-sizing: border-box
 }
+
+.aside_down--header {
+    display: flex;
+    flex-direction: column; 
+}
+.aside_down--header-top {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    margin: 8px 16px;
+}
+.aside_down--header-top--right_buttons{
+    display: flex;
+    flex-direction: row; 
+}
+
+.aside_down {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.aside_down_mid {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 16px;
+}
+    
+     
+
+.aside_down_mid--xbutton{
+    background-color: #2a2a2a;
+    border-radius: 50%;
+    height: 33px;
+    width: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mid_button {
+    align-items: flex-start;
+}
+.artistas {
+    display: inline-block;
+    padding: 5px 10px; /* Ajusta estos valores para el relleno */
+    background-color: #fff; /* Color de fondo */
+    color: #000; /* Color del texto */
+    border-radius: 15px; /* Ajusta este valor para redondear las esquinas */
+    font-size: 14px; /* Tamaño de la fuente */
+    margin: 0 0 0 10px;
+}
+
+.list_header {
+    display: flex;
+    flex-direction: row;
+    padding: 8px 16px;
+    justify-content: space-between;
+}
+
+.artists_list img {
+    width: 15%;
+    border-radius: 80px;
+    margin: 10px;
+}
+
+.artists_list .list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+ul {
+    padding: 0;
+}
+.banner {
+    background-image: url("../img/cdnbanner.png");
+    width: 100%;
+    height: 30%;
+    background-size: cover; /* Esto asegura que la imagen de fondo cubra todo el div */
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner_header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.banner_header--left-buttons {
+    display: flex;
+    flex: row;
+}
+
+.banner_header--right-buttons {
+    display: flex;
+    flex: row;
+    align-items: center;
+}
+
+.banner button {
+    background-color: rgba(0, 0, 0, 0.2);
+    
+}
+
